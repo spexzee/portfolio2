@@ -307,8 +307,8 @@ nav ul li a:hover {
 
 .skills h2 {
     position: absolute;
-    bottom: -58rem;
-    left: 48rem;
+    bottom: -55rem;
+    left: 44rem;
     font-size: 2rem;
 
 }
@@ -516,8 +516,8 @@ form button {
     justify-content: center;
     align-items: center;
     position: absolute;
-    left: 49.59rem;
-    bottom: -117rem;
+    left: 44.59rem;
+    bottom: -105rem;
 }
 span{
     color: red;
