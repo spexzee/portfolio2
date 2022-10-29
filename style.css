@@ -1,0 +1,770 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* scrollbar design */
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(transparent, rgb(255, 0, 255), rgb(64, 255, 0), rgb(0, 255, 255));
+    border-radius: 12px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(transparent, rgb(0, 38, 255), rgb(255, 0, 255));
+}
+
+/* Logo animation */
+.movetext {
+    animation: Movetext 2s infinite;
+
+}
+
+@keyframes Movetext {
+    50% {
+        transform: translateX(25rem);
+    }
+
+    100% {
+        transform: translateX(0rem);
+    }
+}
+
+.animation {
+    animation: animation 2s infinite;
+}
+
+@keyframes animation {
+    50% {
+        transform: translateX(-15rem);
+    }
+
+    100% {
+        transform: translateX(0rem);
+    }
+}
+
+/* hamburger menu */
+.hamburger .ham {
+    position: absolute;
+    top: 1rem;
+    left: 92rem;
+}
+
+.hamburger .cross {
+    position: absolute;
+    top: 0.8rem;
+    left: 92rem;
+}
+
+.ham,
+.cross {
+    width: 23px;
+    display: none;
+    user-select: none;
+    cursor: pointer;
+}
+
+.hamburger span {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+
+
+
+/* navbar */
+.menubar nav span {
+    color: red;
+}
+
+nav {
+    width: 84%;
+    margin: auto;
+    padding: 50px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.active {
+    color: red;
+}
+
+nav img {
+    position: absolute;
+    top: 3rem;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 30px;
+
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+nav ul li:active {
+    color: red;
+}
+
+nav ul li a:hover {
+    color: red;
+    transition: ease-in 0.3s;
+}
+
+/* home section */
+
+
+.menubar {
+    height: 100vh;
+    width: 100%;
+    background-image: url("Images/Picsart_22-10-26_18-27-59-330.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.home {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    color: white !important;
+}
+
+.details .resume {
+    position: absolute;
+    top: 26rem;
+    left: 16rem;
+    padding: 0.5rem;
+    border: 1px solid black;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: white;
+    background-color: red;
+    width: 8rem;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.details .resume:hover {
+    background-color: black;
+    border: 1px solid white;
+    transition: ease-in 0.5s;
+}
+
+.details img {
+    width: 28rem;
+    position: absolute;
+    top: 8rem;
+    left: 55rem;
+}
+
+.details .mine {
+    width: 19rem;
+    position: absolute;
+    top: 10rem;
+    left: 59rem;
+}
+
+/* short note on me */
+.details {
+    font-size: 1.2rem;
+}
+
+.details .text1 {
+    position: absolute;
+    top: 18rem;
+    left: 16rem;
+}
+
+.details .text2 {
+    position: absolute;
+    top: 21rem;
+    left: 15.8rem;
+
+}
+
+.details span {
+    color: red;
+}
+
+
+/* about section */
+.about {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    color: white;
+    /* background-image: url("Images/shutterstock_.webp"); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.hero img {
+
+    width: 20rem;
+    position: absolute;
+    left: 13.7rem;
+    bottom: -36.5rem;
+    border: 1px solid black;
+    border-radius: 20px;
+    background: linear-gradient(145deg, #252020, #2c2727);
+    box-shadow: 12px 12px 40px #100e0e,
+        -12px -12px 40px #353232;
+}
+
+.note p {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 0rem 11rem;
+    letter-spacing: 1px;
+    position: absolute;
+    left: 36rem;
+    bottom: -27rem;
+    font-size: 1.4rem;
+}
+
+.note p a {
+    color: crimson;
+    font-family: sans-serif;
+}
+
+
+/* hire-me button */
+.button {
+    position: absolute;
+    left: 47rem;
+    bottom: -31rem;
+}
+
+.button .hire-me {
+    font-size: 17px;
+    padding: 0.7rem;
+    width: 8rem;
+    border: 1px solid black;
+    border-radius: 14px;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.button .hire-me:hover {
+    background-color: black;
+    border: 1px solid white;
+    transition: ease-in 0.3s;
+}
+
+/* photo hover effect */
+.front,
+.back {
+    display: none;
+}
+
+.active {
+    display: block;
+}
+
+.Nodisplay {
+    display: none;
+}
+
+/* skills section */
+.skills {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    /* background-image: url("Images/istock.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; */
+    color: white !important;
+    display: flex;
+    align-items: center;
+    padding: 10px 30px;
+    justify-content: center;
+
+}
+
+.skills h2 {
+    position: absolute;
+    bottom: -58rem;
+    left: 48rem;
+    font-size: 2rem;
+
+}
+
+.skill-bars {
+    padding: 70px 30px;
+    width: 40rem;
+    height: 50vh;
+    background: rgb(167, 164, 164);
+    border-radius: 20px;
+    background: linear-gradient(145deg, #aea8a8, #faf1f1);
+    box-shadow: 12px 12px 60px #100e0e,
+        -12px -12px 25px #4c505d;
+    margin-bottom: 100px;
+}
+
+.bar {
+    margin: 20px 0;
+    padding: 8px 0;
+}
+
+.bar:first-child {
+    margin-top: 0px;
+}
+
+.info {
+    margin-bottom: 5px;
+}
+
+.info span {
+    font-weight: 600;
+    font-size: 20px;
+    opacity: 0;
+    animation: showText 0.5s 1s linear forwards;
+    color: black;
+}
+
+@keyframes showText {
+    100% {
+        opacity: 1;
+    }
+}
+
+.progress-line {
+    height: 10px;
+    width: 100%;
+    background: #f0f0f0;
+    position: relative;
+    transform: scaleX(0);
+    transform-origin: left;
+    border-radius: 20px;
+    background: linear-gradient(145deg, #252020, #2c2727);
+    box-shadow: 12px 12px 1000px #100e0e,
+        -12px -12px 50px #353232;
+    animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+
+.progress-line span {
+    height: 100%;
+    position: absolute;
+    border-radius: 10px;
+    transform: scaleX(0);
+    transform-origin: left;
+    background: crimson;
+    animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+
+.progress-line span::before {
+    position: absolute;
+    content: "";
+    top: -10px;
+    right: 0;
+    height: 0;
+    width: 0;
+    opacity: 0;
+    border: 7px solid transparent;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+    border-top-color: #000;
+    animation: showText2 0.5s 1.5s linear forwards;
+}
+
+.progress-line span::after {
+    position: absolute;
+    top: -28px;
+    right: 0;
+    font-weight: 500;
+    background: #000;
+    color: #fff;
+    opacity: 0;
+    padding: 1px 8px;
+    font-size: 12px;
+    border-radius: 3px;
+    animation: showText2 0.5s 1.5s linear forwards;
+}
+
+@keyframes animate {
+    100% {
+        transform: scaleX(1);
+    }
+}
+
+.html span {
+    width: 90%;
+}
+
+.css span {
+    width: 85%;
+}
+
+.JavaScript span {
+    width: 69%;
+}
+
+.vb span {
+    width: 75%;
+}
+
+@keyframes showText2 {
+    100% {
+        opacity: 1;
+    }
+}
+
+.html span::after {
+    content: "90%";
+}
+
+.css span::after {
+    content: "85%";
+}
+
+.JavaScript span::after {
+    content: "69%";
+}
+
+.vb span::after {
+    content: "75%";
+}
+
+/* contact section */
+.contact {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(0, 0, 0);
+    color: white !important;
+}
+
+.connect {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    color: white;
+}
+
+::placeholder {
+    color: white;
+    opacity: 80%;
+}
+
+form textarea {
+    background-color: #000;
+    color: #fff;
+}
+
+.name,
+.mail,
+.subject,
+.area {
+    border: 0.3px solid #fff;
+    background-color: #000;
+}
+
+.contact-form .name,
+.mail,
+.subject,
+.area {
+    margin-bottom: 1rem;
+}
+
+.contact-form .name .input-name,
+.input-mail,
+.input-subject,
+button {
+    width: 300px;
+    height: 4vh;
+    color: white;
+
+}
+
+form button {
+    color: rgb(255, 255, 255) !important;
+    background-color: red;
+    font-weight: 600;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+.send-msg:hover{
+    background-color: black;
+    border: 1px solid white;
+}
+.contact .spex-zee{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 49.59rem;
+    bottom: -117rem;
+}
+span{
+    color: red;
+}
+
+
+
+
+/* All Media Queries */
+
+@media screen and (max-width:900px) {
+    .skills h2 {
+        font-size: 2rem;
+        text-align: center;
+        color: #fff;
+    }
+
+    .skill-bars {
+        padding: 15px 20px;
+        width: 600px;
+        background: #fff;
+        box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+    }
+
+}
+
+
+/* For mobile */
+@media screen and (max-width :380px) {
+    .activeMenu {
+        display: block;
+    }
+
+    .hamburger .ham {
+        position: absolute;
+        top: 1rem;
+        left: 21rem;
+    }
+
+    .hamburger .cross {
+        position: absolute;
+        top: 1rem;
+        left: 21rem;
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .menubar nav h2 {
+        position: absolute;
+        top: 1.2rem;
+    }
+
+    .navDown {
+        transform: translateY(-340px);
+        position: absolute;
+    }
+
+    nav ul {
+        position: absolute;
+        left: 7.3rem;
+        top: 5rem;
+    }
+
+    nav ul li {
+        display: list-item;
+        margin: 2rem;
+    }
+
+
+    .menubar {
+        background-image: url("Images/media\(png\).png");
+    }
+
+    .details .text1 {
+        font-size: 0.9rem;
+        width: 11rem;
+        position: absolute;
+        left: 5.4rem;
+        top: 3rem;
+        font-weight: 500;
+    }
+
+    .details .text2 {
+        font-size: 1rem;
+        width: 7rem;
+        font-size: 0.7rem;
+        width: 11rem;
+        position: absolute;
+        top: 4.1rem;
+        left: 6rem;
+        font-weight: 500;
+
+    }
+
+    .details .resume {
+        position: absolute;
+        left: 7.3rem;
+        top: 5.3rem;
+        font-size: 0.7rem;
+        width: 6rem;
+    }
+
+
+    .hero img {
+        width: 12rem;
+        position: absolute;
+        left: 4.4rem;
+        bottom: -26.5rem;
+    }
+
+    .button {
+        position: absolute;
+        left: 7rem;
+        bottom: -30rem;
+
+    }
+
+    .note p {
+        padding: 0rem 0rem;
+        position: absolute;
+        left: 1rem;
+        bottom: -11rem;
+        font-size: 0.8rem;
+    }
+
+    .skills h2 {
+        font-size: 1.5rem;
+        text-align: center;
+        color: #fff;
+        position: absolute;
+        left: 7rem;
+        bottom: -36.3rem;
+    }
+
+    .skill-bars {
+        padding: 0px 7px;
+        width: 17rem;
+        background: #fff;
+        box-shadow: 5px 5px 20px rgb(0 0 0 / 20%);
+        border-radius: 8px;
+    }
+}
+
+@media (min-width :381px) and (max-width : 600px) {
+    .menubar {
+        display: flex;
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .menubar nav h2 {
+        position: absolute;
+        top: 1.3rem;
+    }
+
+    .details .text1 {
+        font-size: 1.2rem;
+        width: 15rem;
+        position: absolute;
+        left: 7.4rem;
+        top: 4rem;
+        font-weight: 500;
+    }
+
+    .details .text2 {
+        font-size: 0.66em;
+        width: 11rem;
+        position: absolute;
+        top: 6rem;
+        left: 9rem;
+        font-weight: 500;
+    }
+
+    .details .resume {
+        position: absolute;
+        left: 11.1rem;
+        top: 8.5rem;
+        font-size: 0.6rem;
+        width: 6rem;
+    }
+
+    .menubar {
+        background-image: url("Images/media\(png\).png");
+    }
+
+    .navDown {
+        transform: translateY(-340px);
+        position: absolute;
+    }
+
+    nav ul {
+        position: absolute;
+        left: 7.3rem;
+        top: 5rem;
+    }
+
+    nav ul li {
+        display: list-item;
+        margin: 2rem;
+    }
+
+    .hero img {
+        width: 22rem;
+        position: absolute;
+        left: 2.5rem;
+        bottom: -48.5rem;
+    }
+
+    .button {
+        position: absolute;
+        left: 9.7rem;
+        bottom: -52rem;
+
+    }
+
+    .note p {
+        padding: 0rem 0rem;
+        position: absolute;
+        left: 1.5rem;
+        bottom: -19rem;
+        font-size: 1.2rem;
+    }
+
+    .skills h2 {
+        font-size: 2.5rem;
+        text-align: center;
+        color: #fff;
+        position: absolute;
+        left: 8.5rem;
+        bottom: -60.3rem;
+    }
+
+    .skill-bars {
+        padding: 0px 7px;
+        width: 23rem;
+        background: #fff;
+        box-shadow: 5px 5px 20px rgb(0 0 0 / 20%);
+        border-radius: 8px;
+
+    }
+}
