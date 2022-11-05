@@ -9,6 +9,14 @@ spexzee.addEventListener('click', () => {
     }
 });
 
+// button color blink
+let btn = document.querySelector('.send-msg')
+document.querySelector('.spex-zee').addEventListener('click', () => {
+    if (btn.classList.contains('send-msg')) {
+        btn.classList.toggle('clr-blink')
+    }
+});
+
 // photo hover effect
 let frontFace = document.querySelector('.front');
 let backFace = document.querySelector('.back');
