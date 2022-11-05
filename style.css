@@ -22,7 +22,29 @@ html {
 ::-webkit-scrollbar-thumb:hover {
     background: linear-gradient(transparent, rgb(0, 38, 255), rgb(255, 0, 255));
 }
-
+/* color blink */
+.clr-blink{
+    animation: clickText 1.4s infinite ease-in-out 1s;
+}
+@keyframes clickText {
+    0%{
+        background-color: blue;
+    }
+    25%{
+        background-color: green;
+        
+    }
+    50%{
+        background-color: red;
+    }
+    75%{
+        background-color: green;
+        
+    }
+    100%{
+        background-color: blue;
+    }
+}
 /* Logo animation */
 .movetext {
     animation: Movetext 2s infinite;
