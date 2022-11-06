@@ -23,8 +23,8 @@ html {
     background: linear-gradient(transparent, rgb(0, 38, 255), rgb(255, 0, 255));
 }
 /* color blink */
-.clr-blink{
-    animation: clickText 1.4s infinite ease-in-out 1s;
+ .clr-blink{
+    animation: clickText 0.6s infinite;
 }
 @keyframes clickText {
     0%{
