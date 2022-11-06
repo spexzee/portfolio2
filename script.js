@@ -9,13 +9,18 @@ spexzee.addEventListener('click', () => {
     }
 });
 
-// button color blink
+ // button color blink
 let btn = document.querySelector('.send-msg')
-document.querySelector('.spex-zee').addEventListener('click', () => {
+btn.addEventListener('mouseover', () => {
     if (btn.classList.contains('send-msg')) {
-        btn.classList.toggle('clr-blink')
+        btn.classList.remove('clr-blink')
     }
 });
+btn.addEventListener('mouseout',()=>{    
+    if (btn.classList.contains('send-msg')) {
+        btn.classList.add('clr-blink')
+    }
+})
 
 // photo hover effect
 let frontFace = document.querySelector('.front');
