@@ -9,7 +9,28 @@
         <link rel="stylesheet" href="style.css">
         <title>Abu | Web Developer 🧑‍💻</title>
         <style>
-            
+            .clr-blink{
+    animation: clickText 1.4s infinite ease-in-out 1s;
+}
+@keyframes clickText {
+    0%{
+        background-color: blue;
+    }
+    25%{
+        background-color: green;
+        
+    }
+    50%{
+        background-color: red;
+    }
+    75%{
+        background-color: green;
+        
+    }
+    100%{
+        background-color: blue;
+    }
+}
         </style>
     </head>
     <body>
@@ -114,12 +135,26 @@
                                 300px;" class="text-area"  required>
                                 </textarea>
                         </div>
-                        <button type="submit" class="send-msg">Send Message</button>
+                        <button type="submit" class="send-msg clr-blink">Send Message</button>
                     </form>
                 </div>
                
             </section>
         </div>
     </body>
+    <script>
+        // button color blink
+let btn = document.querySelector('.send-msg')
+btn.addEventListener('mouseover', () => {
+    if (btn.classList.contains('send-msg')) {
+        btn.classList.remove('clr-blink')
+    }
+});
+btn.addEventListener('mouseout',()=>{    
+    if (btn.classList.contains('send-msg')) {
+        btn.classList.add('clr-blink')
+    }
+})
+    </script>
     <script src="script.js"></script>
 </html>
