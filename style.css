@@ -157,9 +157,10 @@ nav ul li a:hover {
 .menubar {
     height: 100vh;
     width: 100%;
-    background-image: url("Images/Picsart_22-10-26_18-27-59-330.jpg");
+/*     background-image: url("Images/Picsart_22-10-26_18-27-59-330.jpg");
     background-size: cover;
-    background-position: center;
+    background-position: center; */
+    background-color:#000;
 }
 
 .home {
